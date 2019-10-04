@@ -42,7 +42,7 @@ object MinTemperatures  extends Serializable {
     //val tempByStation =stationTemps.reduceByKey((x,y)=>min(x,y))
     val minTempsByStation = stationTemps.reduceByKey((x,y)=>max(x,y))
     
-    // Collect, format, and print the results
+    // Collect, format, and print the resul
     val results = minTempsByStation.collect()
     
     for (result <- results.sorted) {
