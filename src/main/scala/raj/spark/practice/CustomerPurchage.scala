@@ -20,8 +20,6 @@ object CustomerPurchage extends Serializable {
 
     val customerinfo = customerData.map(customerInformation)
     val data =customerinfo.reduceByKey(_+_)
-    val data1=data.d
-    data1.
     data.foreach(println)
 
     val df = spark.createDataFrame(data).toDF("customerID","purchage")
