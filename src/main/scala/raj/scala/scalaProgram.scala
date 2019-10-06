@@ -1,6 +1,6 @@
 package raj.scala
 
-object scalaPractice  {
+object scalaProgram  {
   def main(args:Array[String]): Unit= {
     val  num =20
     println(num)
